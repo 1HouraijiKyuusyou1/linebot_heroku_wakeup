@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課堂資訊輸入</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>課堂資訊輸入</h2>
+        <form>
+            <div class="form-group">
+                <label for="class">課堂：</label>
+                <input type="text" id="class" name="class" placeholder="輸入課堂">
+            </div>
+            <div class="form-group">
+                <label for="teacher">老師：</label>
+                <input type="text" id="teacher" name="teacher" placeholder="輸入老師">
+            </div>
+            <div class="form-group">
+                <label for="day">星期幾：</label>
+                <select id="day" name="day">
+                    <option value="monday">星期一</option>
+                    <option value="tuesday">星期二</option>
+                    <option value="wednesday">星期三</option>
+                    <option value="thursday">星期四</option>
+                    <option value="friday">星期五</option>
+                    <option value="saturday">星期六</option>
+                    <option value="sunday">星期日</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">提交</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
